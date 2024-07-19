@@ -1,9 +1,9 @@
-import "@/styles/globals.css"
 import { Inter as FontSans } from "next/font/google"
 
 import { cn } from "@/lib/utils"
 import React from "react"
 import { Metadata } from "next"
+import './globals.css'
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -25,7 +25,7 @@ export default function RootLayout({ children }: {children:React.ReactNode}) {
           fontSans.variable
         )}
       >
-        ...
+        {children}
       </body>
     </html>
   )
